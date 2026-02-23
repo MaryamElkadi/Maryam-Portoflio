@@ -51,6 +51,13 @@
 	color: inherit;
 }
 
+/* Adjust for mobile screens */
+@media (max-width: 768px) {
+	.floating-button.third {
+		bottom: 20px;
+		left: 20px;
+	}
+}
 /* The glowing panel (matches your floating button style) */
 .github-ribbon div {
 	width: 100%;

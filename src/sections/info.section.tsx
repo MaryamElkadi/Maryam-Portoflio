@@ -10,7 +10,11 @@ export const InfoSection = () => {
 	return (
 		<div
 			className='hero-section'
-			style={{ backgroundColor: colors.dark, color: colors.light }}
+			style={{
+				backgroundColor: colors.dark,
+				color: colors.light,
+				position: 'relative',
+			}}
 		>
 			{/* ⭐ Star This Repo Ribbon */}
 			<a
@@ -23,10 +27,17 @@ export const InfoSection = () => {
 				<span></span>
 			</a>
 
+			{/* Floating Buttons */}
 			<FloatingButton
 				label='About Me'
 				className='first'
 				href='/#about-me'
+			/>
+
+			<FloatingButton
+				label='projects'
+				className='sec'
+				href='/#my-projects'
 			/>
 
 			<p style={{ color: colors.accent }}>Hi, I am</p>
@@ -39,12 +50,6 @@ export const InfoSection = () => {
 			<p style={{ color: colors.secondary }}>
 				Frontend Developer | Software Engineer
 			</p>
-
-			<FloatingButton
-				label='Tech'
-				className='sec'
-				href='/#tech-stack'
-			/>
 
 			<div className='blur'></div>
 
@@ -66,7 +71,7 @@ export const InfoSection = () => {
 				{/* 📱 WhatsApp link */}
 				<GlowLink
 					href='https://wa.me/201557460922'
-					color='#25D366' // WhatsApp green
+					color='#25D366'
 					icon={<IoLogoWhatsapp color={colors.light} />}
 					aria-label='whatsapp'
 				/>

@@ -2,7 +2,9 @@ import { MouseTrail } from './components/mouse-trail';
 import { ScrollBar } from './components/scroll-bar';
 import { AboutMe } from './sections/about-me.section';
 import { InfoSection } from './sections/info.section';
+import { MyProjects } from './sections/my-projects.section';
 import { TechStack } from './sections/tech-stack.section';
+
 import './styles/about-me.css';
 import './styles/floating-button.css';
 import './styles/glow-box.css';
@@ -20,6 +22,7 @@ function App() {
 			<InfoSection />
 			<AboutMe />
 			<TechStack />
+			<MyProjects />
 		</>
 	);
 }
